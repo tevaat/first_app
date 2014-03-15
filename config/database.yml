@@ -49,7 +49,7 @@ test:
   database: first_app_test
   pool: 5
   username: first_app
-  password:
+  password: azerty
 
 production:
   adapter: postgresql
@@ -57,4 +57,4 @@ production:
   database: first_app_production
   pool: 5
   username: first_app
-  password:
+  password: azerty
