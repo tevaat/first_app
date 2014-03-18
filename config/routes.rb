@@ -3,17 +3,11 @@ FirstApp::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'users#index'
+  #  root 'users#index'
+    root 'topics#index'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
-
-
-  root :to => "home#index"
-
-devise_for :users
-      match 'users' => 'users#welcome', :as => 'user_root'
-
-end
 
 resources :users, :only => :show
 
